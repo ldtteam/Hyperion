@@ -198,6 +198,9 @@ namespace Bot.Bot
             if (e.Command.ChatMessage.Username == _configuration.GetSection("twitch")["username"])
                 return;
 
+            if (!e.Command.ChatMessage.IsModerator)
+                return;
+
             _logger.LogInformation("Processing command: {CommandMessagea} from Channel {Channel}", e.Command.ChatMessage.Message, e.Command.ChatMessage.Channel);
             
             foreach (var commandHandler in _commandHandlers)
