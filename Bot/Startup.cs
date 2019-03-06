@@ -40,6 +40,8 @@ namespace Bot
             services.AddSingleton<IModeratorJoinedHandler, ModeratorJoinedWelcomeHandler>();
             services.AddSingleton<IUserJoinedHandler, UserJoinedWelcomeHandler>();
             services.AddSingleton<ICommandHandler, HelpCommandHandler>();
+            services.AddSingleton<ICommandHandler, BlamesCommandHandler>();
+            services.AddSingleton<ICommandHandler, WinsCommandHandler>();
             
             services.AddSingleton<Func<TwitchClient, IInteractor>>(provider =>
             {

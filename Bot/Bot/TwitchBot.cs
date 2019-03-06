@@ -92,6 +92,12 @@ namespace Bot.Bot
             _client.OnConnected += OnTwitchConnected;
             
             _client.AutoReListenOnException = true;
+            _client.RemoveChatCommandIdentifier('!');
+            _client.AddChatCommandIdentifier(_configuration.GetSection("twitch").GetSection("commandPrefix").Get<char>());
+            
+            _client.RemoveWhisperCommandIdentifier('!');
+            _client.AddWhisperCommandIdentifier(_configuration.GetSection("twitch").GetSection("commandPrefix").Get<char>());
+            
             _client.OnError += onTwitchError;
         }
 
@@ -198,7 +204,7 @@ namespace Bot.Bot
             if (e.Command.ChatMessage.Username == _configuration.GetSection("twitch")["username"])
                 return;
 
-            if (!e.Command.ChatMessage.IsModerator)
+            if (!e.Command.ChatMessage.IsModerator && !e.Command.ChatMessage.IsBroadcaster)
                 return;
 
             _logger.LogInformation("Processing command: {CommandMessagea} from Channel {Channel}", e.Command.ChatMessage.Message, e.Command.ChatMessage.Channel);
