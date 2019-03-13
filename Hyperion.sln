@@ -3,6 +3,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bot", "Bot\Bot.csproj", "{50F28758-5F0B-4164-ACFE-2DBA6BD253E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Executive", "Executive\Executive.csproj", "{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,5 +19,9 @@ Global
 		{50F28758-5F0B-4164-ACFE-2DBA6BD253E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F28758-5F0B-4164-ACFE-2DBA6BD253E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F28758-5F0B-4164-ACFE-2DBA6BD253E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
