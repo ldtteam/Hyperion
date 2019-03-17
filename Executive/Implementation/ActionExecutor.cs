@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Executive.API;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
+using Action = Executive.Implementation.Action;
 
 namespace Executive.Implementation
 {
@@ -26,7 +27,7 @@ namespace Executive.Implementation
             .Where(assembly => assembly.Location != null && assembly.Location.Any())
             .ToList().AsEnumerable();
 
-        public async Task Execute(IAction action, IExecutiveInteractionHandler handler, IEnumerable<string> parameters, CancellationToken token)
+        public async Task Execute(Action action, IExecutiveInteractionHandler handler, IEnumerable<string> parameters, CancellationToken token)
         {
             //TODO: Add default imports.
             var options = ScriptOptions.Default

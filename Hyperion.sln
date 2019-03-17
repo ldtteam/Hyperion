@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bot", "Bot\Bot.csproj", "{5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Executive", "Executive\Executive.csproj", "{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paper", "Paper", "{9277EDA6-FEB6-41EE-8F96-87C78B2F5EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyNotes", "Paper\StickyNotes\StickyNotes.csproj", "{A2175482-BA49-4618-BBBC-5F32C472933D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +27,12 @@ Global
 		{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{905BF623-80E5-48ED-B9B0-3FAC071CF2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2175482-BA49-4618-BBBC-5F32C472933D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2175482-BA49-4618-BBBC-5F32C472933D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2175482-BA49-4618-BBBC-5F32C472933D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2175482-BA49-4618-BBBC-5F32C472933D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2175482-BA49-4618-BBBC-5F32C472933D} = {9277EDA6-FEB6-41EE-8F96-87C78B2F5EA4}
 	EndGlobalSection
 EndGlobal
